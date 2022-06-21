@@ -6,8 +6,20 @@ function App() {
   const [hour, setHour] = useState(0);
   const [min, setMin] = useState(0);
   const [sec, setSec] = useState(0);
+  const [bgClass, setBgClass] = useState("image1");
+  const setBackground = (seconds: number) => {
+    if (seconds < 20) {
+      setBgClass("image4");
+    } else if (seconds < 40) {
+      setBgClass("image5");
+    } else {
+      setBgClass("image1");
+    }
+  };
   const calculateTimer = (diff: number) => {
-    setSec(Math.floor(diff % 60));
+    const seconds = Math.floor(diff % 60);
+    setSec(seconds);
+    setBackground(seconds);
     setMin(Math.floor((diff / 60) % 60));
     setHour(Math.floor((diff / (60 * 60)) % 24));
     setDay(Math.floor(diff / (60 * 60 * 24)));
@@ -30,12 +42,32 @@ function App() {
     return cleanUp;
   });
   return (
-    <div className="full-size-container p30 app">
+    <div className="full-size-container p30 d-flex flex-flow-column bg-80">
       <div className="timer poppins400 justify-flex-end d-flex">
         <span className="pr10">{days} days</span>
         <span className="pr10">{hour} hours</span>
         <span className="pr10">{min} minutes</span>
         <span className="pr10">{sec} seconds</span>
+      </div>
+      <div className="flex-auto">
+        <div
+          className={
+            "container full-size-container image1 " +
+            (bgClass === "image1" ? "visible" : "")
+          }
+        ></div>
+        <div
+          className={
+            "container full-size-container image4 " +
+            (bgClass === "image4" ? "visible" : "")
+          }
+        ></div>
+        <div
+          className={
+            "container full-size-container image5 " +
+            (bgClass === "image5" ? "visible" : "")
+          }
+        ></div>
       </div>
     </div>
   );

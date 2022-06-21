@@ -1,6 +1,42 @@
-.app {
-  background: rgb(0,0,0, 0.6);
+.image1{
+  background: url("~/public/images/image1.webp");
+}
+.image4 {
+  background: url("~/public/images/image4.webp");
+}
+.image5 {
+  background: url("~/public/images/image5.webp");
+}
+.container {
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.container:not(.visible) {
+  display: none;
 }
 .timer {
   color: var(--white);
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+.bg-80 {
+  background-color: rgb(0, 0, 0, 0.8);
 }
