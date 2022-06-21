@@ -1,13 +1,127 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: Popins-Light;
+  /*300*/
+  src: url('~/fonts/Poppins-Light.ttf') format('truetype');
+  font-display: fallback;
+}
+@font-face {
+  font-family: Popins-Regular;
+  /*400*/
+  src: url('~/fonts/Poppins-Regular.ttf') format('truetype');
+  font-display: fallback;
+}
+@font-face {
+  font-family: Popins-Medium;
+  /*500*/
+  src: url('~/fonts/Poppins-Medium.ttf') format('truetype');
+  font-display: fallback;
+}
+@font-face {
+  font-family: Popins-Bold;
+  /*700*/
+  src: url('~/fonts/Poppins-Bold.ttf') format('truetype');
+  font-display: fallback;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  font-size: 16px;
+  --bluish-100: #289AB4;
+  --white: #ffffff
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+.poppins300{font-family: 'Popins-Light', 'Muli', Arial, Helvetica, sans-serif;}
+.poppins400{font-family: 'Popins-Regular', 'Muli', Arial, Helvetica, sans-serif;}
+.poppins500{font-family: 'Popins-Medium', 'Muli', Arial, Helvetica, sans-serif;}
+.poppins700{font-family: 'Popins-Bold', 'Muli', Arial, Helvetica, sans-serif;}
+
+.fontSize-45{font-size: 2.8125rem ;}
+.fontSize-38{font-size: 2.375rem ;}
+.fontSize-36{font-size: 2.25rem ;}
+.fontSize-34{font-size: 2.125rem ;}
+.fontSize-32{font-size: 2rem ;}
+.fontSize-30{font-size: 1.875rem ;}
+.fontSize-28{font-size: 1.75rem ;}
+.fontSize-25{font-size: 1.5625rem ;}
+.fontSize-24{font-size: 1.5rem ;}
+.fontSize-22{font-size: 1.375rem ;}
+.fontSize-20{font-size: 1.25rem ;}
+.fontSize-18{font-size: 1.125rem ;}
+.fontSize-16{font-size: 1rem ;}
+.fontSize-15{font-size: 0.9375rem ;}
+.fontSize-14{font-size: 0.875rem ;}
+.fontSize-13{font-size: 0.8125rem ;}
+.fontSize-12{font-size: 0.75rem ;}
+.fontSize-11{font-size: 0.6875rem ;}
+.fontSize-10{font-size: 0.625rem ;}
+.fontSize-9{font-size: 0.5625rem ;}
+.fontSize-8{font-size: 0.5rem ;}
+.fontSize-0{font-size: 0;}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-flex-end {
+  justify-content: flex-end;
+}
+.align-items-center {
+  align-items: center;
+}
+
+.flex-none {
+  flex: none;
+}
+.flex-flow-column {
+  flex-flow: column;
+}
+.d-flex {
+  display: flex;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+
+/* paddings start */
+/* all */
+.p30 {
+  padding: 30px;
+}
+/* top */
+.pt10 {
+  padding-top: 10px;
+}
+/* right */
+.pr10 {
+  padding-right: 10px;
+}
+/* paddings end */
+
+
+.p
+.text-center {
+  text-align: center;
+}
+.full-size-container {
+  width: 100%;
+  height: 100%;
 }
