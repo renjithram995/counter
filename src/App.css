@@ -24,8 +24,8 @@ background: url("~/public/images/image3.webp");
   -webkit-animation-duration: 3.5s;
   animation-name: fade;
   animation-duration: 3.5s; */
-  -webkit-transition: background-image 1s;
-  transition: background-image 1s;
+  -webkit-transition: background-image 5s;
+  transition: background-image 5s;
   transition-timing-function: cubic-bezier(0.54, 0.08, 0.68, 0.19);;
 }
 .timer {
