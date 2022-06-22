@@ -1,22 +1,32 @@
 .image1{
   background: url("~/public/images/image1.webp");
 }
+.image2{
+  background: url("~/public/images/image2.webp");
+}
+.image3 {
+background: url("~/public/images/image3.webp");
+}
 .image4 {
   background: url("~/public/images/image4.webp");
 }
 .image5 {
   background: url("~/public/images/image5.webp");
 }
+.image6 {
+  background: url("~/public/images/image6.webp");
+}
 .container {
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  background-position: center;
+  /* -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
-}
-.container:not(.visible) {
-  display: none;
+  animation-duration: 3.5s; */
+  -webkit-transition: background-image 1s;
+  transition: background-image 1s;
+  transition-timing-function: cubic-bezier(0.54, 0.08, 0.68, 0.19);;
 }
 .timer {
   color: var(--white);

@@ -8,12 +8,18 @@ function App() {
   const [sec, setSec] = useState(0);
   const [bgClass, setBgClass] = useState("image1");
   const setBackground = (seconds: number) => {
-    if (seconds < 20) {
-      setBgClass("image4");
+    if (seconds < 10) {
+      setBgClass("image1");
+    } else if (seconds < 20) {
+      setBgClass("image2");
+    } else if(seconds < 30) {
+      setBgClass("image3");
     } else if (seconds < 40) {
+      setBgClass("image4");
+    } else if (seconds < 50) {
       setBgClass("image5");
     } else {
-      setBgClass("image1");
+      setBgClass("image6");
     }
   };
   const calculateTimer = (diff: number) => {
@@ -43,7 +49,7 @@ function App() {
   });
   return (
     <div className="full-size-container p30 d-flex flex-flow-column bg-80">
-      <div className="timer poppins400 justify-flex-end d-flex">
+      <div className="timer poppins400 justify-center d-flex pb10">
         <span className="pr10">{days} days</span>
         <span className="pr10">{hour} hours</span>
         <span className="pr10">{min} minutes</span>
@@ -52,20 +58,7 @@ function App() {
       <div className="flex-auto">
         <div
           className={
-            "container full-size-container image1 " +
-            (bgClass === "image1" ? "visible" : "")
-          }
-        ></div>
-        <div
-          className={
-            "container full-size-container image4 " +
-            (bgClass === "image4" ? "visible" : "")
-          }
-        ></div>
-        <div
-          className={
-            "container full-size-container image5 " +
-            (bgClass === "image5" ? "visible" : "")
+            "container full-size-container " + bgClass
           }
         ></div>
       </div>

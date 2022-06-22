@@ -115,6 +115,10 @@ body {
 .pr10 {
   padding-right: 10px;
 }
+/* bottom */
+.pb10 {
+  padding-bottom: 10px;;
+}
 /* paddings end */
 
 .text-center {
