@@ -1,32 +1,28 @@
 .image1{
-  background: url("~/public/images/image1.webp");
+  background: url("images/image1.webp");
 }
 .image2{
-  background: url("~/public/images/image2.webp");
+  background: url("images/image2.webp");
 }
 .image3 {
-background: url("~/public/images/image3.webp");
+background: url("images/image3.webp");
 }
 .image4 {
-  background: url("~/public/images/image4.webp");
+  background: url("images/image4.webp");
 }
 .image5 {
-  background: url("~/public/images/image5.webp");
+  background: url("images/image5.webp");
 }
 .image6 {
-  background: url("~/public/images/image6.webp");
+  background: url("images/image6.webp");
 }
 .container {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  /* -webkit-animation-name: fade;
-  -webkit-animation-duration: 3.5s;
-  animation-name: fade;
-  animation-duration: 3.5s; */
   -webkit-transition: background-image 5s;
   transition: background-image 5s;
-  transition-timing-function: cubic-bezier(0.54, 0.08, 0.68, 0.19);;
+  transition-timing-function: cubic-bezier(0.57, 0.13, 0.38, 0.19);
 }
 .timer {
   color: var(--white);

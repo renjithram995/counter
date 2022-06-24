@@ -60,7 +60,14 @@ function App() {
           className={
             "container full-size-container " + bgClass
           }
-        ></div>
+        >
+          <img className="full-size-container" style={{"display": "none"}} src={require("./images/image1.webp")} alt="" />
+          <img className="full-size-container" style={{"display": "none"}} src={require("./images/image2.webp")} alt="" />
+          <img className="full-size-container" style={{"display": "none"}} src={require("./images/image3.webp")} alt="" />
+          <img className="full-size-container" style={{"display": "none"}} src={require("./images/image4.webp")} alt="" />
+          <img className="full-size-container" style={{"display": "none"}} src={require("./images/image5.webp")} alt="" />
+          <img className="full-size-container" style={{"display": "none"}} src={require("./images/image6.webp")} alt="" />
+        </div>
       </div>
     </div>
   );
