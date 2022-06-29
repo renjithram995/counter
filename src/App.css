@@ -25,7 +25,7 @@ background: url("images/image3.webp");
   transition-timing-function: cubic-bezier(0.57, 0.13, 0.38, 0.19);
 }
 .timer {
-  color: var(--white);
+  color: var(--black);
 }
 @-webkit-keyframes fade {
   from {
@@ -44,5 +44,5 @@ background: url("images/image3.webp");
   }
 }
 .bg-80 {
-  background-color: rgb(0, 0, 0, 0.8);
+  background-color: rgb(159 191 225);
 }
